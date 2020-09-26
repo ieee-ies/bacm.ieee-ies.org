@@ -33,7 +33,6 @@ echo "<div class=\"title\">Structure </div> <div class=\"subcont\"> " >> $FILE".
 echo "<h2>Current Chairs of the TC</h2>" >> $FILE".html"
 
 tail -n +4 $FILE".tsv" \
-| sort -u -b -d -f -i -k 1,3 -s -t$'\t'  \
 | awk 'BEGIN { FS = "\t" } ;
 {
   print "<b>"$1"</b>"
