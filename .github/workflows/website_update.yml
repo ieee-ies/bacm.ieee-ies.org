@@ -21,6 +21,7 @@ jobs:
         EVENTSURL: ${{ secrets.EVENTSURL }}
         MEMBERSURL: ${{ secrets.MEMBERSURL }}
         PAPERSURL: ${{ secrets.PAPERSURL }}
+        CHAIRSURL: ${{ secrets.CHAIRSURL }}
 
       run: |
         cd $GITHUB_WORKSPACE
