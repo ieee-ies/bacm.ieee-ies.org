@@ -40,6 +40,13 @@ if [ -z ${PAPERSURL+x} ]
     git add ../papers.html
 fi
 
+if [ -z ${CHAIRSURL+x} ]
+  then
+    echo "Secret variable CHAIRSURL is unset. I wont update chairs.html"
+  else
+    ./chairs.sh
+    git add ../chairs.html
+fi
 
 #commit changes
 git config --local core.autocrlf input
